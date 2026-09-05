@@ -10,7 +10,7 @@ export default function Marquee({ text }: { text: string }) {
       <motion.div
         className="flex w-max gap-6 whitespace-nowrap"
         animate={{ x: ["0%", "-50%"] }}
-        transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
       >
         {[...repeated, ...repeated].map((item, i) => (
           <span
