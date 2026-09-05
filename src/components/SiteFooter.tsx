@@ -31,7 +31,16 @@ export default function SiteFooter() {
                 Request a free consultation →
               </Link>
             </li>
-            <li className="text-white/40">Phone &amp; email coming soon</li>
+            <li>
+              <a href="tel:+12165700919" className="transition hover:text-oak">
+                (216) 570-0919
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cmamula@icloud.com" className="transition hover:text-oak">
+                cmamula@icloud.com
+              </a>
+            </li>
           </ul>
         </div>
       </div>
