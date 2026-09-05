@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* Core neutrals */
+  --color-black: #0d0a0a;
+  --color-charcoal: #1c1414;
+  --color-white: #f4efe6;
+
+  /* Burgundy / maroon — primary brand */
+  --color-wine: #4a2934;
+  --color-wine-dark: #351d25;
+  --color-wine-light: #6b3d4b;
+
+  /* Warm neutrals */
+  --color-sand: #e5dbcb;
+  --color-cool: #f1f1f1;
+
+  /* Wood accents */
+  --color-walnut: #9e4d2a;
+  --color-oak: #d9b872;
+
+  /* Industrial accents */
+  --color-stone: #737373;
+  --color-dust: #d9d9d9;
+  --color-chilli: #a31f2b;
+  --color-tangerine: #f15333;
+
+  --background: var(--color-white);
+  --foreground: var(--color-black);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-black: var(--color-black);
+  --color-charcoal: var(--color-charcoal);
+  --color-white: var(--color-white);
+  --color-wine: var(--color-wine);
+  --color-wine-dark: var(--color-wine-dark);
+  --color-wine-light: var(--color-wine-light);
+  --color-sand: var(--color-sand);
+  --color-cool: var(--color-cool);
+  --color-walnut: var(--color-walnut);
+  --color-oak: var(--color-oak);
+  --color-stone: var(--color-stone);
+  --color-dust: var(--color-dust);
+  --color-chilli: var(--color-chilli);
+  --color-tangerine: var(--color-tangerine);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-anton);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px var(--color-black);
+  color: transparent;
+}
+
+.diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-oak),
+    var(--color-oak) 14px,
+    var(--color-black) 14px,
+    var(--color-black) 28px
+  );
+}
