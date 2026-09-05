@@ -52,7 +52,7 @@ export default async function PortfolioProjectPage({
           </Link>
           <ScrollReveal>
             <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-              {project.category} — {project.location}
+              {project.category} in {project.location}
             </p>
             <h1 className="mt-3 font-display text-4xl tracking-wide text-black md:text-5xl">
               {project.title.toUpperCase()}

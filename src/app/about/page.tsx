@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "About Us | CMM Contracting Solutions",
   description:
-    "The family behind CMM Contracting Solutions — built on construction and hospitality, based in Hudson, Ohio.",
+    "The family behind CMM Contracting Solutions, built on construction and hospitality and based in Hudson, Ohio.",
 };
 
 export default function About() {
@@ -33,7 +33,7 @@ export default function About() {
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal>
           <PlaceholderImage
-            label="Photo — Conner Mamula, Founder"
+            label="Photo of Conner Mamula, Founder"
             className="aspect-[4/3]"
           />
         </ScrollReveal>
@@ -47,7 +47,7 @@ export default function About() {
           <p className="mt-4 leading-relaxed text-black/75">
             CMM Contracting Solutions is run by Conner Mamula out of Hudson,
             Ohio. Conner spent almost 15 years working construction
-            alongside his father before starting CMM — but the way he runs a
+            alongside his father before starting CMM, but the way he runs a
             job site was shaped by two people, not one.
           </p>
         </ScrollReveal>
@@ -56,7 +56,7 @@ export default function About() {
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal className="md:order-2">
           <PlaceholderImage
-            label="Photo — Conner's father on the job site"
+            label="Photo of Conner's father on the job site"
             className="aspect-[4/3]"
           />
         </ScrollReveal>
@@ -68,7 +68,7 @@ export default function About() {
           <p className="mt-4 leading-relaxed text-black/75">
             Conner learned the trade from his father, who built and ran a
             large-scale construction company. Almost 15 years on real job
-            sites, under someone who cared about doing it right — that&apos;s
+            sites, under someone who cared about doing it right. That&apos;s
             the standard CMM still holds every project to.
           </p>
         </ScrollReveal>
@@ -77,7 +77,7 @@ export default function About() {
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal>
           <PlaceholderImage
-            label="Photo — Conner's mother at the bed & breakfast"
+            label="Photo of Conner's mother at the bed and breakfast"
             className="aspect-[4/3]"
           />
         </ScrollReveal>
@@ -88,7 +88,7 @@ export default function About() {
           <h2 className="mt-3 font-display text-3xl tracking-wide text-black">HIS MOTHER</h2>
           <p className="mt-4 leading-relaxed text-black/75">
             Conner also grew up around his mother&apos;s bed &amp;
-            breakfast — a business built entirely on making people feel
+            breakfast, a business built entirely on making people feel
             taken care of the moment they walked in. The warmth behind CMM
             isn&apos;t a brand decision. It&apos;s how the family business
             was always run.

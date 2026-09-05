@@ -11,7 +11,7 @@ export const PROJECT_TYPES: ProjectType[] = [
   {
     id: "repair",
     label: "Repair",
-    description: "A specific fix — not a full remodel.",
+    description: "A specific fix, not a full remodel.",
     durationMinutes: 30,
   },
   {
@@ -35,16 +35,16 @@ export const PROJECT_TYPES: ProjectType[] = [
   {
     id: "other",
     label: "Something Else",
-    description: "Not sure which category — let's talk it through.",
+    description: "Not sure which category? Let's talk it through.",
     durationMinutes: 45,
   },
 ];
 
 export const BUDGET_RANGES = [
   "Under $10k",
-  "$10k – $25k",
-  "$25k – $75k",
-  "$75k – $150k",
+  "$10k to $25k",
+  "$25k to $75k",
+  "$75k to $150k",
   "$150k+",
   "Not sure yet",
 ];

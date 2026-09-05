@@ -7,7 +7,7 @@ export default function SiteFooter() {
         <div>
           <p className="font-display text-2xl tracking-wide text-white">CMM CONTRACTING SOLUTIONS</p>
           <p className="mt-3 max-w-xs text-sm text-white/70">
-            Built on construction and hospitality. Two trades, one standard —
+            Built on construction and hospitality. Two trades, one standard,
             based in Hudson, Ohio.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10 px-6 py-5 text-center font-mono text-xs uppercase tracking-widest text-white/40">
-        © {new Date().getFullYear()} CMM Contracting Solutions — All rights reserved
+        © {new Date().getFullYear()} CMM Contracting Solutions. All rights reserved.
       </div>
     </footer>
   );

@@ -169,7 +169,7 @@ export default function BookingForm() {
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               className={fieldClass}
-              placeholder="Street, city — Northeast Ohio / Akron area"
+              placeholder="Street and city in the Northeast Ohio / Akron area"
             />
           </label>
 
@@ -206,7 +206,7 @@ export default function BookingForm() {
           </p>
           <h1 className="mt-2 font-display text-4xl tracking-wide text-black">PICK A TIME</h1>
           <p className="mt-2 text-black/70">
-            Pulled from CMM&apos;s real availability — a{" "}
+            Pulled from CMM&apos;s real availability, for a{" "}
             {selectedType.durationMinutes}-minute {selectedType.label.toLowerCase()}{" "}
             consultation.
           </p>
@@ -316,7 +316,7 @@ export default function BookingForm() {
         <div className="text-center">
           <h1 className="font-display text-4xl tracking-wide text-black">REQUEST SENT</h1>
           <p className="mx-auto mt-4 max-w-md text-black/75">
-            Thanks, {name.split(" ")[0] || "there"} — CMM will confirm your{" "}
+            Thanks, {name.split(" ")[0] || "there"}. CMM will confirm your{" "}
             {formatSlot(selectedSlot.start).day.toLowerCase()} at{" "}
             {formatSlot(selectedSlot.start).time} consultation shortly.{" "}
             You&apos;ll get an email once it&apos;s on the calendar.

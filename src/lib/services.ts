@@ -9,11 +9,11 @@ export const SERVICES: Service[] = [
     title: "Remodels",
     description: "Kitchens, baths, and living spaces reworked for how you actually live.",
     details:
-      "From a single-room refresh to a full gut remodel, we work around your home and your schedule — not the other way around.",
+      "From a single-room refresh to a full gut remodel, we work around your home and your schedule instead of the other way around.",
   },
   {
     title: "Additions",
-    description: "More room, built to match the bones of your home — not bolted on.",
+    description: "More room, built to match the bones of your home instead of bolted on.",
     details:
       "New rooms, second stories, and expansions designed to look like they were always part of the house.",
   },

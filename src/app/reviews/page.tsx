@@ -7,7 +7,7 @@ import { REVIEWS, REVIEW_SUMMARY } from "@/lib/reviews";
 export const metadata: Metadata = {
   title: "Reviews | CMM Contracting Solutions",
   description:
-    "Read verified customer reviews for CMM Contracting Solutions, Hudson, Ohio — 5.0 stars on Angi.",
+    "Read verified customer reviews for CMM Contracting Solutions in Hudson, Ohio, rated 5.0 stars on Angi.",
 };
 
 export default function ReviewsPage() {

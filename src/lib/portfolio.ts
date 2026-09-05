@@ -24,7 +24,7 @@ function photos(
   return entries.map(({ name, stage }) => ({
     src: `/images/portfolio/${slug}/${name}.jpg`,
     stage,
-    alt: `${altBase} — ${stage}`,
+    alt: `${stage} photo of the ${altBase}`,
   }));
 }
 
@@ -35,7 +35,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: "Bathroom Remodel",
     location: "Cuyahoga Falls, OH",
     summary:
-      "A full shower gut and rebuild — tiled surround, glass door, and black fixtures throughout.",
+      "A full shower gut and rebuild, finished with a tiled surround, glass door, and black fixtures throughout.",
     cover: "/images/portfolio/cuyahoga-falls-bathroom-remodel/after-1.jpg",
     photos: photos(
       "cuyahoga-falls-bathroom-remodel",
@@ -57,7 +57,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: "Basement Remodel",
     location: "Northeast Ohio",
     summary:
-      "An unfinished basement turned into a full lounge — stone-front wet bar, cedar plank walls, and a vault door.",
+      "An unfinished basement turned into a full lounge, complete with a stone-front wet bar, cedar plank walls, and a vault door.",
     cover: "/images/portfolio/custom-basement-bar-lounge/after-1.jpg",
     photos: photos(
       "custom-basement-bar-lounge",
@@ -139,7 +139,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: "Bathroom Remodel",
     location: "Twinsburg, OH",
     summary:
-      "Two full bathrooms gutted and rebuilt in the same project — a walk-in shower and soaking tub in one, a double vanity in the other.",
+      "Two full bathrooms gutted and rebuilt in the same project: a walk-in shower and soaking tub in one, and a double vanity in the other.",
     cover: "/images/portfolio/twinsburg-master-guest-bath-remodel/after-1.jpg",
     photos: photos(
       "twinsburg-master-guest-bath-remodel",

@@ -24,7 +24,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "CMM Contracting Solutions | Hudson, Ohio",
   description:
-    "CMM Contracting Solutions — construction and remodeling built right, in Hudson, Ohio and across Northeast Ohio. Request a free consultation online.",
+    "CMM Contracting Solutions offers construction and remodeling built right, in Hudson, Ohio and across Northeast Ohio. Request a free consultation online.",
 };
 
 export default function RootLayout({

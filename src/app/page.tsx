@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div>
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-              Hudson, Ohio — Family Owned
+              Family Owned in Hudson, Ohio
             </p>
             <h1 className="mt-3 font-display text-5xl leading-[0.95] tracking-wide text-black md:text-6xl">
               THOUGHTFULLY BUILT.
@@ -27,9 +27,10 @@ export default function Home() {
               DEEPLY LIVED.
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-black/75">
-              CMM Contracting Solutions brings together two family trades —
+              CMM Contracting Solutions brings together two family trades:
               construction and hospitality. Every space we build is made
-              with the same care: to be lived in fully, not just admired.
+              with the same care, meant to be lived in fully, not just
+              admired.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -47,13 +48,13 @@ export default function Home() {
             </div>
           </div>
           <PlaceholderImage
-            label="Hero photo — job site / finished project"
+            label="Hero photo of a job site or finished project"
             className="aspect-[4/3]"
           />
         </div>
       </section>
 
-      <Marquee text="NOW BOOKING CONSULTATIONS  —  SERVING HUDSON & NORTHEAST OHIO  —  REMODELS · ADDITIONS · NEW BUILDS · REPAIRS" />
+      <Marquee text="NOW BOOKING CONSULTATIONS · SERVING HUDSON & NORTHEAST OHIO · REMODELS · ADDITIONS · NEW BUILDS · REPAIRS" />
 
       <section className="border-b-2 border-black bg-cool">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:grid-cols-2 md:grid-cols-4">
@@ -81,10 +82,10 @@ export default function Home() {
             CRAFTSMANSHIP MEETS HOSPITALITY
           </h2>
           <p className="mt-4 leading-relaxed text-black/75">
-            CMM was built where two family businesses meet — a large-scale
+            CMM was built where two family businesses meet: a large
             construction company and a bed &amp; breakfast. That&apos;s the
-            standard behind every job: built right, and you&apos;re treated
-            right.
+            standard behind every job. Work that&apos;s built right, and a
+            customer who&apos;s treated right.
           </p>
           <Link
             href="/about"
@@ -138,7 +139,7 @@ export default function Home() {
               REQUEST A QUOTE
             </h2>
             <p className="mx-auto mt-4 max-w-md text-white/70">
-              Tell us about your project and pick a time that works — synced
+              Tell us about your project and pick a time that works. It syncs
               straight to our real schedule.
             </p>
             <Link

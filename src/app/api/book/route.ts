@@ -62,7 +62,7 @@ export async function POST(request: NextRequest) {
         from: "CMM Website <onboarding@resend.dev>",
         to: NOTIFY_EMAIL,
         replyTo: body.email,
-        subject: `New consultation request — ${body.name} (${projectLabel})`,
+        subject: `New consultation request from ${body.name} (${projectLabel})`,
         text: [
           `New booking request from the website:`,
           ``,
