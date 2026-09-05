@@ -22,14 +22,14 @@ export default function Home() {
               Hudson, Ohio — Family Owned
             </p>
             <h1 className="mt-3 font-display text-5xl leading-[0.95] tracking-wide text-black md:text-6xl">
-              BUILT TOUGH.
+              THOUGHTFULLY BUILT.
               <br />
-              TREATED WARM.
+              DEEPLY LIVED.
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-black/75">
-              CMM Contracting Solutions brings two family trades into every
-              job — construction and hospitality. Solid work, and the
-              feeling that you&apos;re welcome here.
+              CMM Contracting Solutions brings together two family trades —
+              construction and hospitality. Every space we build is made
+              with the same care: to be lived in fully, not just admired.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
