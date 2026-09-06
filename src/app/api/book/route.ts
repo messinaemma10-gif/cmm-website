@@ -55,10 +55,17 @@ export async function POST(request: NextRequest) {
     PROJECT_TYPES.find((p) => p.id === body.projectType)?.label ??
     body.projectType;
 
+  // TEMPORARY DIAGNOSTICS while debugging email delivery. Remove once confirmed working.
+  const debug: Record<string, unknown> = {
+    hasResendKey: Boolean(process.env.RESEND_API_KEY),
+    keyLength: process.env.RESEND_API_KEY?.length ?? 0,
+    keyPrefix: process.env.RESEND_API_KEY?.slice(0, 5) ?? null,
+  };
+
   if (process.env.RESEND_API_KEY) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
-      await resend.emails.send({
+      const result = await resend.emails.send({
         from: "CMM Website <bookings@cmmcontractingsolutions.com>",
         to: NOTIFY_EMAIL,
         replyTo: body.email,
@@ -76,8 +83,11 @@ export async function POST(request: NextRequest) {
           `Requested time: ${formatSlot(body.slotStart!)}`,
         ].join("\n"),
       });
+      debug.resendResult = result;
     } catch (error) {
       console.error("Failed to send booking notification email:", error);
+      debug.resendError =
+        error instanceof Error ? error.message : String(error);
     }
   } else {
     console.warn(
@@ -86,5 +96,5 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  return NextResponse.json({ ok: true, status: "pending" });
+  return NextResponse.json({ ok: true, status: "pending", debug });
 }
