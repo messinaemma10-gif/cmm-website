@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
-        from: "CMM Website <onboarding@resend.dev>",
+        from: "CMM Website <bookings@cmmcontractingsolutions.com>",
         to: NOTIFY_EMAIL,
         replyTo: body.email,
         subject: `New consultation request from ${body.name} (${projectLabel})`,
