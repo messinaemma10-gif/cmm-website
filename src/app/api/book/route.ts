@@ -55,16 +55,27 @@ export async function POST(request: NextRequest) {
     PROJECT_TYPES.find((p) => p.id === body.projectType)?.label ??
     body.projectType;
 
+  // Strip invisible/zero-width characters that can sneak in when an API key
+  // is copy-pasted through a browser or chat UI (e.g. U+200B zero-width space).
+  const zeroWidthPattern = new RegExp(
+    "[" + String.fromCharCode(0x200b, 0x200c, 0x200d, 0xfeff) + "\\s]",
+    "g"
+  );
+  const resendApiKey = process.env.RESEND_API_KEY?.replace(
+    zeroWidthPattern,
+    ""
+  );
+
   // TEMPORARY DIAGNOSTICS while debugging email delivery. Remove once confirmed working.
   const debug: Record<string, unknown> = {
-    hasResendKey: Boolean(process.env.RESEND_API_KEY),
-    keyLength: process.env.RESEND_API_KEY?.length ?? 0,
-    keyPrefix: process.env.RESEND_API_KEY?.slice(0, 5) ?? null,
+    hasResendKey: Boolean(resendApiKey),
+    keyLength: resendApiKey?.length ?? 0,
+    keyPrefix: resendApiKey?.slice(0, 5) ?? null,
   };
 
-  if (process.env.RESEND_API_KEY) {
+  if (resendApiKey) {
     try {
-      const resend = new Resend(process.env.RESEND_API_KEY);
+      const resend = new Resend(resendApiKey);
       const result = await resend.emails.send({
         from: "CMM Website <bookings@cmmcontractingsolutions.com>",
         to: NOTIFY_EMAIL,
