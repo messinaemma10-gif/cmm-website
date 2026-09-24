@@ -75,7 +75,7 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal className="md:order-2">
-          <div className="relative aspect-square overflow-hidden border-2 border-black">
+          <div className="relative aspect-[7/5] overflow-hidden border-2 border-black">
             <Image
               src="/images/home/conner-tower-bw.jpg"
               alt="Conner Mamula on a job site"
@@ -95,10 +95,10 @@ export default function Home() {
           <p className="mt-4 leading-relaxed text-black/75">
             CMM is run by Conner Mamula, shaped by two very different
             influences: almost 15 years in construction alongside his dad,
-            and a mom who ran a bed &amp; breakfast built on making people
-            feel completely at home. That&apos;s the standard behind every
-            job. Work that&apos;s built right, done by someone you&apos;re
-            actually comfortable having in your house.
+            and a mom with a career in hospitality who taught him how to
+            make people feel taken care of. You get an honest answer, a
+            fair price, and a timeline he actually sticks to, from someone
+            you&apos;re comfortable having in your house.
           </p>
           <Link
             href="/about"
