@@ -6,7 +6,7 @@ import PortfolioGrid from "@/components/portfolio/PortfolioGrid";
 export const metadata: Metadata = {
   title: "Portfolio | CMM Contracting Solutions",
   description:
-    "Recent remodels, additions, new builds, and repairs from CMM Contracting Solutions across Northeast Ohio.",
+    "Recent design, remodel, repair, and renovation projects from CMM Contracting Solutions across Northeast Ohio.",
 };
 
 export default function PortfolioPage() {

@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Marquee text="NOW BOOKING CONSULTATIONS · SERVING HUDSON & NORTHEAST OHIO · REMODELS · ADDITIONS · NEW BUILDS · REPAIRS" />
+      <Marquee text="NOW BOOKING CONSULTATIONS · SERVING HUDSON & NORTHEAST OHIO · DESIGN · REMODELS · REPAIRS · RENOVATIONS" />
 
       <section className="border-b-2 border-black bg-cool">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:grid-cols-2 md:grid-cols-4">

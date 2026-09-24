@@ -9,10 +9,10 @@ export type ProjectType = {
 // consultation. Conner can tune these once he sees how estimates actually run.
 export const PROJECT_TYPES: ProjectType[] = [
   {
-    id: "repair",
-    label: "Repair",
-    description: "A specific fix, not a full remodel.",
-    durationMinutes: 30,
+    id: "design",
+    label: "Design",
+    description: "Planning and layout before construction starts.",
+    durationMinutes: 45,
   },
   {
     id: "remodel",
@@ -21,22 +21,16 @@ export const PROJECT_TYPES: ProjectType[] = [
     durationMinutes: 60,
   },
   {
-    id: "addition",
-    label: "Addition",
-    description: "Adding square footage to an existing home.",
+    id: "repair",
+    label: "Repair",
+    description: "A specific fix, not a full remodel.",
+    durationMinutes: 30,
+  },
+  {
+    id: "renovation",
+    label: "Renovation",
+    description: "Updating a room or the whole house.",
     durationMinutes: 60,
-  },
-  {
-    id: "new-build",
-    label: "New Build",
-    description: "Ground-up new construction.",
-    durationMinutes: 90,
-  },
-  {
-    id: "other",
-    label: "Something Else",
-    description: "Not sure which category? Let's talk it through.",
-    durationMinutes: 45,
   },
 ];
 

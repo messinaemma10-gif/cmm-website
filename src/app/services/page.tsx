@@ -6,7 +6,7 @@ import { SERVICES } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Services We Offer | CMM Contracting Solutions",
   description:
-    "Remodels, additions, new builds, and repairs from CMM Contracting Solutions in Hudson, Ohio.",
+    "Design, remodels, repairs, and renovations from CMM Contracting Solutions in Hudson, Ohio.",
 };
 
 export default function ServicesPage() {
