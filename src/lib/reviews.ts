@@ -11,6 +11,21 @@ export type Review = {
 // Update this list periodically as new reviews come in.
 export const REVIEWS: Review[] = [
   {
+    name: "Emma M.",
+    date: "Sep 2026",
+    rating: 5,
+    service: "Kitchen Remodel",
+    text: "Conner is the reason I felt confident buying a 1936 house. I've known Conner for over a decade and he's now my go-to contractor for everything on my new (old!) house in Kent. Buying a home built in 1936 is a lot. There are surprises around every corner and honestly, if I didn't have Conner in my corner, I don't think I would have felt comfortable making the purchase at all. He's always willing to come over and take on whatever job I throw at him, big or small. Most recently he sealed the old asbestos on my ductwork and he handled it carefully and professionally. I've been really pleased with every project he's done so far. There's truly no job Conner can't tackle. He's reliable, knowledgeable, and genuinely cares about doing things right. If you want someone you can trust with your home, CMM Contracting Solutions is the best in the business. Highly, highly recommend!",
+  },
+  {
+    name: "Regina S.",
+    date: "Sep 2026",
+    rating: 5,
+    service: "Kitchen Remodel",
+    price: "$4,250",
+    text: "Conner and his team were absolutely incredible! We had a super tight deadline with getting our house ready to sell and they did an awesome job with constant communication and were able to meet our deadline! We also added more to our list of things we needed done and they were super flexible and accommodating. Conner was very easy to talk to, super quick to respond and did great work! I will absolutely be hiring them again in the future! Some of the jobs they did included: paint the kitchen and living room, grout the kitchen backsplash, install kitchen cabinet hardware, texture the living room ceiling, and fix the framing of the front door (and of course a lot of little things around the house like patching holes and touching up paint as well).",
+  },
+  {
     name: "Randy S.",
     date: "May 2026",
     rating: 5,
