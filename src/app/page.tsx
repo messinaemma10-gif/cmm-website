@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import Marquee from "@/components/Marquee";
 import StripeDivider from "@/components/StripeDivider";
@@ -47,10 +47,16 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <PlaceholderImage
-            label="Hero photo of a job site or finished project"
-            className="aspect-[4/3]"
-          />
+          <div className="relative aspect-[4/3] overflow-hidden border-2 border-black">
+            <Image
+              src="/images/home/hero-mancave-bw.jpg"
+              alt="A custom basement bar built by CMM Contracting Solutions"
+              fill
+              priority
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -69,29 +75,36 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal className="md:order-2">
-          <PlaceholderImage
-            label="Mother's B&B + Father's construction company photos"
-            className="aspect-square"
-          />
+          <div className="relative aspect-square overflow-hidden border-2 border-black">
+            <Image
+              src="/images/home/conner-tower-bw.jpg"
+              alt="Conner Mamula on a job site"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </ScrollReveal>
         <ScrollReveal className="md:order-1">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-            Two Trades, One Standard
+            The Guy Behind CMM
           </p>
           <h2 className="mt-3 font-display text-4xl tracking-wide text-black">
             CRAFTSMANSHIP MEETS HOSPITALITY
           </h2>
           <p className="mt-4 leading-relaxed text-black/75">
-            CMM was built where two family businesses meet: a large
-            construction company and a bed &amp; breakfast. That&apos;s the
-            standard behind every job. Work that&apos;s built right, and a
-            customer who&apos;s treated right.
+            CMM is run by Conner Mamula, shaped by two very different
+            influences: almost 15 years in construction alongside his dad,
+            and a mom who ran a bed &amp; breakfast built on making people
+            feel completely at home. That&apos;s the standard behind every
+            job. Work that&apos;s built right, done by someone you&apos;re
+            actually comfortable having in your house.
           </p>
           <Link
             href="/about"
             className="mt-6 inline-block font-mono text-sm font-semibold uppercase tracking-widest text-wine hover:text-wine-dark"
           >
-            Meet the Family Behind CMM →
+            Meet Conner →
           </Link>
         </ScrollReveal>
       </section>

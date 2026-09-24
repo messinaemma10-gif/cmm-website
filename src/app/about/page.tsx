@@ -1,97 +1,159 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
-import PlaceholderImage from "@/components/PlaceholderImage";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "About Us | CMM Contracting Solutions",
   description:
-    "The family behind CMM Contracting Solutions, built on construction and hospitality and based in Hudson, Ohio.",
+    "Meet Conner Mamula, the founder of CMM Contracting Solutions in Hudson, Ohio, and the construction and hospitality background behind how he works.",
 };
 
 export default function About() {
   return (
     <div>
       <section className="border-b-2 border-black bg-sand">
-        <div className="mx-auto max-w-3xl px-6 py-16 text-center md:py-24">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
           <ScrollReveal>
             <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-              About Us
+              Meet the Founder
             </p>
-            <h1 className="mt-3 font-display text-5xl tracking-wide text-black md:text-6xl">
-              BUILT ON TWO KINDS OF CARE
+            <h1 className="mt-3 font-display text-5xl leading-[0.95] tracking-wide text-black md:text-6xl">
+              CONNER MAMULA
             </h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-black/75">
-              CMM Contracting Solutions is based in Hudson, Ohio. Everything
-              about how we work traces back to two family businesses, and
-              two very different kinds of care.
+            <p className="mt-6 max-w-md text-lg leading-relaxed text-black/75">
+              Conner started CMM Contracting Solutions in Hudson, Ohio after
+              almost 15 years learning the trade on real job sites. How he
+              runs a job today still carries two very different influences:
+              his dad&apos;s construction background, and his mom&apos;s eye
+              for making a space, and the people in it, feel right.
             </p>
+          </ScrollReveal>
+          <ScrollReveal delay={0.1}>
+            <div className="relative aspect-[3/4] overflow-hidden border-2 border-black">
+              <Image
+                src="/images/about/conner-portrait-bw.jpg"
+                alt="Conner Mamula on a job site"
+                fill
+                priority
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal>
-          <PlaceholderImage
-            label="Photo of Conner Mamula, Founder"
-            className="aspect-[4/3]"
-          />
+          <div className="relative aspect-[4/3] overflow-hidden border-2 border-black">
+            <Image
+              src="/images/about/conner-dad-bw.jpg"
+              alt="Conner Mamula with his dad, Ron, on a job site"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-            The Founder
+            The Foundation
           </p>
           <h2 className="mt-3 font-display text-3xl tracking-wide text-black">
-            CONNER MAMULA
+            LEARNING FROM RON
           </h2>
           <p className="mt-4 leading-relaxed text-black/75">
-            CMM Contracting Solutions is run by Conner Mamula out of Hudson,
-            Ohio. Conner spent almost 15 years working construction
-            alongside his father before starting CMM, but the way he runs a
-            job site was shaped by two people, not one.
+            Conner&apos;s dad, Ron, spent his career in large-scale
+            construction, and Conner grew up around it. He spent almost 15
+            years on real job sites, working his way up before he ever
+            started CMM. That&apos;s where the standard comes from: do it
+            right the first time, or don&apos;t put your name on it.
           </p>
         </ScrollReveal>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal className="md:order-2">
-          <PlaceholderImage
-            label="Photo of Conner's father on the job site"
-            className="aspect-[4/3]"
-          />
+          <div className="relative aspect-[4/3] overflow-hidden border-2 border-black">
+            <Image
+              src="/images/about/conner-trowel-bw.jpg"
+              alt="Conner Mamula finishing a concrete floor"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </ScrollReveal>
         <ScrollReveal delay={0.1} className="md:order-1">
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-            The Builder
+            The Craft
           </p>
-          <h2 className="mt-3 font-display text-3xl tracking-wide text-black">HIS FATHER</h2>
+          <h2 className="mt-3 font-display text-3xl tracking-wide text-black">
+            HE STILL SWINGS THE HAMMER
+          </h2>
           <p className="mt-4 leading-relaxed text-black/75">
-            Conner learned the trade from his father, who built and ran a
-            large-scale construction company. Almost 15 years on real job
-            sites, under someone who cared about doing it right. That&apos;s
-            the standard CMM still holds every project to.
+            CMM isn&apos;t run from behind a desk. Conner is still on site,
+            still finishing the floor, still checking the work himself.
+            Fifteen-plus years in the trade means he can tell you honestly
+            what a job actually needs, and then go do it.
           </p>
         </ScrollReveal>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
         <ScrollReveal>
-          <PlaceholderImage
-            label="Photo of Conner's mother at the bed and breakfast"
-            className="aspect-[4/3]"
-          />
+          <div className="relative aspect-[3/4] overflow-hidden border-2 border-black">
+            <Image
+              src="/images/about/conner-mom-color.jpg"
+              alt="Conner Mamula with his mom"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
-            The Host
+            The Hospitality
           </p>
-          <h2 className="mt-3 font-display text-3xl tracking-wide text-black">HIS MOTHER</h2>
+          <h2 className="mt-3 font-display text-3xl tracking-wide text-black">
+            WHAT HE LEARNED FROM HIS MOM
+          </h2>
           <p className="mt-4 leading-relaxed text-black/75">
-            Conner also grew up around his mother&apos;s bed &amp;
-            breakfast, a business built entirely on making people feel
-            taken care of the moment they walked in. The warmth behind CMM
-            isn&apos;t a brand decision. It&apos;s how the family business
-            was always run.
+            Conner&apos;s mom has an eye for design and ran her own bed &amp;
+            breakfast, a business built on making every guest feel completely
+            at home. That&apos;s where CMM&apos;s other half comes from: a
+            job isn&apos;t finished until you&apos;d feel just as comfortable
+            having Conner back in your house.
+          </p>
+        </ScrollReveal>
+      </section>
+
+      <section className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
+        <ScrollReveal className="md:order-2">
+          <div className="relative aspect-[3/4] overflow-hidden border-2 border-black">
+            <Image
+              src="/images/about/conner-puppies-color.jpg"
+              alt="Conner Mamula with his dogs, Kali and Kiki"
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+        </ScrollReveal>
+        <ScrollReveal delay={0.1} className="md:order-1">
+          <p className="font-mono text-xs font-semibold uppercase tracking-widest text-wine">
+            Off the Clock
+          </p>
+          <h2 className="mt-3 font-display text-3xl tracking-wide text-black">
+            KALI, KIKI, AND EVERYTHING ELSE
+          </h2>
+          <p className="mt-4 leading-relaxed text-black/75">
+            When Conner isn&apos;t on a job site, he&apos;s usually getting
+            run around by his two goldendoodles, Kali and Kiki. His best
+            friends, and a pretty good preview of how he treats everyone
+            else too.
           </p>
         </ScrollReveal>
       </section>
